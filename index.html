@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parcial 1 - Formulario LPPA - Sitio HTML, CSS, JS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <script src="scriptForm.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <h2><a href="#"><i class="ion-plane"></i>Formulario LPPA - Parcial 1</a></h2>
+            <nav>
+              <ul>
+              <li>
+              <a href="#" title="Menu">Menu</a>
+              </li>
+              <li>
+              <a href="#" title="Cursos">Cursos</a>
+              </li>
+              <li>
+              <a href="#" title="Ayuda">Ayuda</a>
+              </li>
+              <li>
+              <a class="btn" href="#" title="Registrarse / Loguearse">Registrarse / Loguearse</a>
+              </li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+                <div class="card"></div>
+          <title>Parcial 1 - LPPA</title>
+            <form class="form-body"  action="" id="formulario" method="get"> 
+                <div class="card-body">
+                <div class="form-input">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" class="input-form" placeholder="Nombre de al menos 3 letras" id="nombre">
+                      <p class="errorNombre" id="errorNombre" style="display:none;color: red;" >Error</p>
+                </div>
+                <div class="form-input">
+                      <label class="lbl" for="nombre">Apellido</label>
+                      <input type="text" class="input-form"   placeholder="Apellido de al menos 3 letras" id="apellido">
+                          <p class="errorApellido" id="errorApellido" style="display:none;color: red;" >Error</p>
+                </div>
+                <div class="form-input"> 
+                      <label class="lbl" for="nombre">Correo Electronico</label>   
+                      <input type="text" class="input-form"   placeholder="E-mail" id="correo">
+                      <p class="errorCorreo" id="errorCorreo" style="display:none;color: red;" >Error</p>
+                </div>
+                <div class="form-input">   
+                      <label  class="lbl" for="nombre">Edad</label>  
+                      <input type="text" class="input-form"   placeholder="Edad" id="edad">
+                      <p class="errorEdad" id="errorEdad" style="display:none;color: red;" >Error</p>
+                </div>
+                <div class="form-input"> 
+                      <label  class="lbl" for="pais">Pais</label>    
+                  <select name="pais" class="input-form" id="pais">
+                      <option value="0">Seleccionar...</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Chile">Chile</option>
+                  </select>
+                      <p class="errorPais" id="errorPais" style="display:none;color: red;" >Error</p>    
+                </div>
+                <div class="column">
+                    <fieldset class="Sexo">
+                      <legend>Sexo</legend>
+                <div>
+                      <input type="radio" name="sexo[]"  value="Masculino"id="masculino">
+                      <label for="masculino" class="lbl-selec">Masculino</label>
+                </div>
+                <div>
+                      <input type="radio" name="sexo[]" value="Femenino" id="femenino">
+                      <label for="femenino" class="lbl-selec" >Femenino</label>
+                </div>  
+                <div>
+                      <input type="radio" name="sexo[]" value="NoBinario" id="NoBinario">
+                      <label for="NoBinario" class="lbl-selec">No Binario</label>
+                </div>
+                <div>
+                      <p class="errorSexo" id="errorSexo" style="display:none;color: red;" >Error</p>   
+                </div>
+                    </fieldset>
+
+                    <fieldset class="extras">
+                      <legend>Extras</legend>
+                      <label class="lbl">Temas de Interes </label>
+                <div>
+                      <input type="checkbox" name="interes[]"  value="musica"id="musica">
+                      <label for="musica" class="lbl-selec" >Musica</label>
+                </div>
+                <div class="custom-checkbox">
+                      <input type="checkbox" name="interes[]" value="deportes" id="deportes">
+                      <label  for="deportes"  class="lbl-selec">Deportes</label>
+                </div>  
+                <div class="custom-checkbox">
+                      <input type="checkbox" name="interes[]" value="juegos" id="juegos">
+                      <label for="juegos"  class="lbl-selec">Juegos</label>
+                </div>  
+                <div class="custom-checkbox">
+                      <input type="checkbox" name="interes[]" value="tecnologia" id="tecnologia">
+                      <label for="tecnologia" class="lbl-selec">Tecnologia</label>
+                </div> 
+                <div>   
+                      <p class="errorTema" id="errorTema" style="display:none;color: red;" >Error</p>
+                </div>
+                    </fieldset>
+                </div>
+                <div class="form-input">
+                      <textarea name="comentario" placeholder="Ingrese sus comentarios" id="comentario" cols="30" rows="5"></textarea>
+                </div>   
+                </div>    
+                <div class="card-footer">
+                      <button type="submit" class="btn btn-primary"  id="myBtn" value="">Enviar</button>
+                </div>    
+            </form>
+                </div>
+        </main>
+    </body>
+</html>
