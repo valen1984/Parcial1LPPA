@@ -1,1 +1,123 @@
+.myForm {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 3px;
+    padding: 1em;
+  }
+  .form-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+  }
 
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 10px;
+
+  }
+  .card-body{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  .input-group {
+   	display: flex;
+  }
+  .input-group > label {
+    margin-right: 1em; 
+    padding: .5em 0;
+  }
+  .myForm input,
+  .myForm select {
+    flex: 6; 
+    padding: .5em;
+    margin-bottom: 1em;
+  }
+  .myForm button {
+   padding: 1em; 
+    background: gray;
+    color: white;
+    border: 0;
+  }
+  .myForm fieldset {
+   	border: 0; 
+  }
+  .taxi > label,
+  .extras > label {
+    display: block;
+  }
+
+  ul, nav{
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  a:hover {
+    opacity: 1;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 1.5rem;
+  }
+  
+  i {
+    font-size: 1.3rem;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: beige;
+    padding: 10px 100px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+  }
+  
+  header nav li{
+    margin: 0 15px;
+  }
+  
+  header nav li:first-child{
+    margin-left: 0; 
+  }
+  
+  header nav li:last-child{
+    margin-right: 0;  
+  }
