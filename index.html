@@ -113,8 +113,19 @@
                       <textarea name="comentario" placeholder="Ingrese sus comentarios" id="comentario" cols="30" rows="5"></textarea>
                 </div>   
                 </div>    
-                <div class="card-footer">
-                      <button type="submit" class="btn btn-primary"  id="myBtn" value="">Enviar</button>
+                <div class="footer">
+                  <!--<button type="submit" class="btn btn-primary"  id="myBtn" value="">Enviar</button>-->
+
+                  <button id="myBtn" onclick="modal()">Enviar</button>
+
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                  <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Gracias por suscribirse. Pronto recibirá novedades. Saludos.</p>
+                  </div>
+
+                  </div>
                 </div>    
             </form>
                 </div>
